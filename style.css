@@ -29,7 +29,7 @@ body::before {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* =========================
@@ -63,9 +63,15 @@ body::before {
 }
 
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* =========================
@@ -121,17 +127,14 @@ body::before {
 
 /* icon positions */
 .icon-linkedin {
+  top: 150px;
+  left: 70px;
   width: 70px;
 }
 
 .icon-linkedin img {
   width: 56px;
   height: auto;
-}
-
-.icon-linkedin {
-  top: 150px;
-  left: 70px;
 }
 
 .icon-music {
@@ -515,18 +518,17 @@ body::before {
 }
 
 /* =========================
-   lIGHTBOX
+   LIGHTBOX
 ========================= */
-
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.8);
+  z-index: 5000;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
-  z-index: 5000;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .lightbox.hidden {
@@ -548,27 +550,37 @@ body::before {
   position: absolute;
   top: 20px;
   right: 30px;
-  background: #ffb6d9;
-  border: 2px solid #ff79aa;
-  color: white;
-  font-size: 24px;
   padding: 6px 12px;
   cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  background: #ffb6d9;
+  border: 2px solid #ff79aa;
 }
+
 /* =========================
-   MOBILE
+   MOBILE NAV
 ========================= */
 .mobile-nav {
   display: none;
 }
 
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 768px) {
+  html,
+  body,
+  * {
+    cursor: auto !important;
+  }
+
   body {
+    display: block;
+    min-height: 100vh;
+    padding: 20px 20px 140px;
     overflow-x: hidden;
     overflow-y: auto;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-top: 110px;
     background-size: 260px;
   }
 
@@ -581,7 +593,7 @@ body::before {
   }
 
   .desktop-icons {
-    display: none;
+    display: none !important;
   }
 
   .sparkle {
@@ -593,10 +605,10 @@ body::before {
     top: auto;
     left: auto;
     transform: none;
-    width: 92vw;
+    width: 100%;
     max-width: 420px;
     height: auto;
-    margin: 0 auto 20px;
+    margin: 0 auto 24px;
   }
 
   .window-body {
@@ -604,17 +616,13 @@ body::before {
   }
 
   .paint-area {
-    min-height: 220px;
-  }
-
-  .paint-area img {
-    object-fit: cover;
+    min-height: 240px;
   }
 
   .heart {
     width: 150px;
     height: 150px;
-    margin: 30px auto 140px;
+    margin: 30px auto 40px;
   }
 
   .heart::before,
@@ -656,13 +664,14 @@ body::before {
   .archive-window,
   .about-window,
   .secret-window {
-    width: 92vw;
-    max-width: 420px;
-    height: 70vh;
-    top: 90px;
+    position: fixed;
+    top: 70px;
     left: 50%;
     right: auto;
     transform: translateX(-50%);
+    width: calc(100vw - 24px);
+    max-width: 420px;
+    height: 72vh;
   }
 
   .archive-grid,
@@ -676,25 +685,25 @@ body::before {
   }
 
   .mobile-nav {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    z-index: 40;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
-    position: fixed;
-    left: 50%;
-    bottom: 24px;
-    transform: translateX(-50%);
-    width: 88vw;
+    width: calc(100vw - 40px);
     max-width: 320px;
-    z-index: 40;
+    transform: translateX(-50%);
   }
 
   .mobile-nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none;
     color: #fff;
     font-size: 11px;
+    text-decoration: none;
     text-shadow: 1px 1px 0 #d94ca4;
     font-family: "Windows 95", Monaco, monospace;
   }
@@ -702,8 +711,8 @@ body::before {
   .mobile-nav img {
     width: 48px;
     height: 48px;
+    margin-bottom: 6px;
     object-fit: contain;
     image-rendering: pixelated;
-    margin-bottom: 6px;
   }
 }
