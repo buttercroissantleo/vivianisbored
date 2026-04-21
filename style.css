@@ -555,3 +555,155 @@ body::before {
   padding: 6px 12px;
   cursor: pointer;
 }
+/* =========================
+   MOBILE
+========================= */
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 110px;
+    background-size: 260px;
+  }
+
+  body::before {
+    backdrop-filter: blur(1.5px);
+  }
+
+  .custom-cursor {
+    display: none;
+  }
+
+  .desktop-icons {
+    display: none;
+  }
+
+  .sparkle {
+    font-size: 14px;
+  }
+
+  .win95-window {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 92vw;
+    max-width: 420px;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+
+  .window-body {
+    height: auto;
+  }
+
+  .paint-area {
+    min-height: 220px;
+  }
+
+  .paint-area img {
+    object-fit: cover;
+  }
+
+  .heart {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 140px;
+  }
+
+  .heart::before,
+  .heart::after {
+    width: 150px;
+    height: 150px;
+  }
+
+  .heart::before {
+    top: -75px;
+    left: 0;
+  }
+
+  .heart::after {
+    top: 0;
+    left: 75px;
+  }
+
+  .content {
+    width: 120px;
+    transform: translate(-50%, -52%) rotate(45deg);
+  }
+
+  .content h1 {
+    margin: 0 0 8px;
+    font-size: 15px;
+  }
+
+  .content p {
+    margin: 4px 0;
+    font-size: 9px;
+    line-height: 1.35;
+  }
+
+  .big {
+    font-size: 17px;
+  }
+
+  .archive-window,
+  .about-window,
+  .secret-window {
+    width: 92vw;
+    max-width: 420px;
+    height: 70vh;
+    top: 90px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .archive-grid,
+  .cat-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-grid img,
+  .cat-gallery img {
+    height: auto;
+  }
+
+  .mobile-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+    width: 88vw;
+    max-width: 320px;
+    z-index: 40;
+  }
+
+  .mobile-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 11px;
+    text-shadow: 1px 1px 0 #d94ca4;
+    font-family: "Windows 95", Monaco, monospace;
+  }
+
+  .mobile-nav img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    margin-bottom: 6px;
+  }
+}
