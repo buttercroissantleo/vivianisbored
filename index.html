@@ -4,103 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vivianisbored</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="favicon.png?v=2">
+
   <link rel="stylesheet" href="pixel.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
+
 <body>
-  <!-- Mobile-only navigation -->
+
+  <!-- ================= MOBILE NAV ================= -->
   <div class="mobile-nav">
-  <a href="#" id="open-about-mobile">
-    <img src="aboutme.png" alt="About me">
-    <span>about me</span>
-  </a>
 
-  <a href="#" id="open-archive-mobile">
-    <img src="Camera.png" alt="Archive">
-    <span>archive</span>
-  </a>
-
-  <a
-    href="https://soundcloud.com/vivianisbored"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="music-folder.png" alt="Music">
-    <span>music</span>
-  </a>
-
-  <a
-    href="https://vimeo.com/user256905792?fl=pp&fe=sh"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="videostrip.png" alt="Videos">
-    <span>videos</span>
-  </a>
-
-  <a href="https://www.linkedin.com/in/abi-conrado-sabido-3110b4390/" 
-   target="_blank">
-    <img src="linkedin-icon.png" />
-    <span>linkedin</span>
-  </a>
-
-</div>
-
-  <!-- Desktop icons -->
-  <div class="desktop-icons">
-    <a
-      href="https://www.linkedin.com/in/abi-conrado-sabido-3110b4390/"
-      class="desktop-icon icon-linkedin"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src="linkedin-icon.png" alt="LinkedIn shortcut">
-      <span>linkedin</span>
+    <a href="#" id="open-about-mobile">
+      <img src="aboutme.png" alt="about">
+      <span>about me</span>
     </a>
 
-    <a
-      href="https://soundcloud.com/vivianisbored"
-      class="desktop-icon icon-music"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src="music-folder.png" alt="Music folder">
+    <a href="#" id="open-archive-mobile">
+      <img src="Camera.png" alt="archive">
+      <span>archive</span>
+    </a>
+
+    <a href="https://soundcloud.com/vivianisbored" target="_blank" rel="noopener">
+      <img src="music-folder.png" alt="music">
       <span>music</span>
     </a>
 
-    <a
-      href="https://vimeo.com/user256905792?fl=pp&fe=sh"
-      class="desktop-icon icon-vimeo"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src="videostrip.png" alt="Vimeo shortcut">
+    <a href="https://vimeo.com/user256905792?fl=pp&fe=sh" target="_blank" rel="noopener">
+      <img src="videostrip.png" alt="videos">
+      <span>videos</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/abi-conrado-sabido-3110b4390/" target="_blank" rel="noopener">
+      <img src="linkedin-icon.png" alt="linkedin">
+      <span>linkedin</span>
+    </a>
+
+  </div>
+
+  <!-- ================= DESKTOP ICONS ================= -->
+  <div class="desktop-icons">
+
+    <a href="https://www.linkedin.com/in/abi-conrado-sabido-3110b4390/" 
+       class="desktop-icon icon-linkedin" target="_blank">
+      <img src="linkedin-icon.png" alt="">
+      <span>linkedin</span>
+    </a>
+
+    <a href="https://soundcloud.com/vivianisbored" 
+       class="desktop-icon icon-music" target="_blank">
+      <img src="music-folder.png" alt="">
+      <span>music</span>
+    </a>
+
+    <a href="https://vimeo.com/user256905792?fl=pp&fe=sh" 
+       class="desktop-icon icon-vimeo" target="_blank">
+      <img src="videostrip.png" alt="">
       <span>videos</span>
     </a>
 
     <a href="#" class="desktop-icon icon-about" id="open-about">
-      <img src="aboutme.png" alt="About me shortcut">
+      <img src="aboutme.png" alt="">
       <span>about-me.exc</span>
     </a>
 
     <a href="#" class="desktop-icon icon-archive" id="open-archive">
-      <img src="Camera.png" alt="Visual archive folder">
+      <img src="Camera.png" alt="">
       <span>visual archive</span>
     </a>
 
     <a href="#" class="desktop-icon icon-secret-folder" id="open-secret-folder">
-      <img src="secretfiles.png" alt="Secret folder">
+      <img src="secretfiles.png" alt="">
       <span>secret folder</span>
     </a>
+
   </div>
 
-  <!-- Custom cursor -->
+  <!-- ================= FX ================= -->
   <div class="custom-cursor"></div>
-
-  <!-- Sparkle background -->
   <div class="sparkle-container"></div>
 
-  <!-- Main paint window -->
+  <!-- ================= MAIN WINDOW ================= -->
   <div class="win95-window">
     <div class="title-bar">
       <span>Untitled Life Project - Paint</span>
@@ -112,99 +98,12 @@
 
     <div class="window-body">
       <div class="paint-area">
-        <img src="heart-doodle.png" alt="Heart doodle drawing">
+        <img src="heart-doodle.png" alt="">
       </div>
     </div>
   </div>
 
-  <!-- Visual archive window -->
-  <div class="archive-window hidden" id="archive-window" aria-hidden="true">
-    <div class="archive-title-bar">
-      <span>Visual Archive</span>
-      <button
-        type="button"
-        class="archive-close"
-        id="close-archive"
-        aria-label="Close archive"
-      >
-        x
-      </button>
-    </div>
-
-    <div class="archive-body">
-      <div class="archive-grid">
-        <img src="archive1.png" alt="Archive image 1" class="archive-image">
-        <img src="archive2.png" alt="Archive image 2" class="archive-image">
-        <img src="archive3.png" alt="Archive image 3" class="archive-image">
-        <img src="archive4.png" alt="Archive image 4" class="archive-image">
-        <img src="archive5.png" alt="Archive image 5" class="archive-image">
-        <img src="archive6.png" alt="Archive image 6" class="archive-image">
-      </div>
-
-      <a
-        href="https://www.are.na/share/xuRVqCx"
-        class="archive-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        see more from the archive →
-      </a>
-    </div>
-  </div>
-
-  <!-- About window -->
-  <div class="about-window hidden" id="about-window" aria-hidden="true">
-    <div class="about-title-bar">
-      <span>About Me</span>
-      <button
-        type="button"
-        class="about-close"
-        id="close-about"
-        aria-label="Close about me window"
-      >
-        x
-      </button>
-    </div>
-
-    <div class="about-body">
-      <div class="about-inner">
-        <p class="about-kicker">about-me.exc</p>
-        <h2>hi stranger, i'm vivianisbored ♡ aka abi!</h2>
-        <p>i'm a mexican-american, bay area native, la-based creative working across film, music, and visual media.</p>
-        <p>this site is my digital brain, part desktop, part archive, part moodboard, part visual diary.</p>
-        <p>i'm drawn to storytelling through experimental visuals, sound, and building worlds that feel playful, emotional, and a little chaotic.</p>
-        <p>i'm always making something, whether it's a song, a video, a zine, a collage, or just a mess of ideas in my notebook.</p>
-        <p>despite my personal aesthetic, horror is my favorite genre, and you can usually find me sipping oolong tea while writing or watching horror films.</p>
-        <p>click around the folders to see what i make! i hope you enjoy :D</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Secret folder window -->
-  <div class="secret-window hidden" id="secret-folder-window" aria-hidden="true">
-    <div class="secret-title-bar">
-      <span>secret folder</span>
-      <button
-        type="button"
-        class="close-btn"
-        id="close-secret-folder"
-        aria-label="Close secret folder"
-      >
-        x
-      </button>
-    </div>
-
-    <div class="secret-window-content">
-      <div class="cat-gallery">
-        <img src="cat1.png" alt="Cat 1">
-        <img src="cat2.png" alt="Cat 2">
-        <img src="cat3.png" alt="Cat 3">
-        <img src="cat4.png" alt="Cat 4">
-      </div>
-    </div>
-  </div>
-
-  <!-- Heart content -->
+  <!-- ================= HEART ================= -->
   <div class="heart">
     <div class="content">
       <p>n2mu</p>
@@ -215,12 +114,77 @@
     </div>
   </div>
 
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
-    <button id="lightbox-close" class="lightbox-close" aria-label="Close image">✕</button>
-    <img id="lightbox-image" class="lightbox-image" src="" alt="">
+  <!-- ================= ARCHIVE ================= -->
+  <div class="archive-window hidden" id="archive-window">
+    <div class="archive-title-bar">
+      <span>Visual Archive</span>
+      <button id="close-archive">x</button>
+    </div>
+
+    <div class="archive-body">
+      <div class="archive-grid">
+        <img src="archive1.png">
+        <img src="archive2.png">
+        <img src="archive3.png">
+        <img src="archive4.png">
+        <img src="archive5.png">
+        <img src="archive6.png">
+      </div>
+
+      <a href="https://www.are.na/share/xuRVqCx" target="_blank" class="archive-link">
+        see more →
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= ABOUT ================= -->
+  <div class="about-window hidden" id="about-window">
+    <div class="about-title-bar">
+      <span>About Me</span>
+      <button id="close-about">x</button>
+    </div>
+
+    <div class="about-body">
+      <div class="about-inner">
+        <p class="about-kicker">about-me.exc</p>
+        <h2>hi stranger, i'm vivian ♡</h2>
+
+        <p>mexican-american, bay area native, la-based creative.</p>
+        <p>film, music, visual media.</p>
+        <p>this is my digital brain.</p>
+        <p>part archive, part chaos, part diary.</p>
+
+        <p>i love horror, collage, and building strange emotional worlds.</p>
+
+        <p>click around :)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SECRET ================= -->
+  <div class="secret-window hidden" id="secret-folder-window">
+    <div class="secret-title-bar">
+      <span>secret folder</span>
+      <button id="close-secret-folder">x</button>
+    </div>
+
+    <div class="secret-window-content">
+      <div class="cat-gallery">
+        <img src="cat1.png">
+        <img src="cat2.png">
+        <img src="cat3.png">
+        <img src="cat4.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div id="lightbox" class="lightbox hidden">
+    <button id="lightbox-close">✕</button>
+    <img id="lightbox-image">
   </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>
