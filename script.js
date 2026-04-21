@@ -152,3 +152,12 @@ if (galleryImages.length && lightbox && lightboxImage && lightboxClose) {
     }
   });
 }
+document.getElementById("open-about-mobile")?.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.getElementById("about-window")?.classList.remove("hidden");
+});
+
+document.getElementById("open-archive-mobile")?.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.getElementById("archive-window")?.classList.remove("hidden");
+});
