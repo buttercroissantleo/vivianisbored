@@ -29,7 +29,7 @@
       <span>music</span>
     </a>
 
-    <a href="https://vimeo.com/user256905792?fl=pp&fe=sh" target="_blank" rel="noopener noreferrer">
+    <a href="#" id="open-video-mobile">
       <img src="videostrip.png" alt="videos">
       <span>videos</span>
     </a>
@@ -62,19 +62,14 @@
       <span>music</span>
     </a>
 
-    <a
-      href="https://vimeo.com/user256905792?fl=pp&fe=sh"
-      class="desktop-icon icon-vimeo"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src="videostrip.png" alt="Vimeo shortcut">
+    <a href="#" class="desktop-icon icon-vimeo" id="open-video">
+      <img src="videostrip.png" alt="Video archive shortcut">
       <span>videos</span>
     </a>
 
     <a href="#" class="desktop-icon icon-about" id="open-about">
       <img src="aboutme.png" alt="About me shortcut">
-      <span>about-me.exe</span>
+      <span>about-me.exc</span>
     </a>
 
     <a href="#" class="desktop-icon icon-archive" id="open-archive">
@@ -120,7 +115,7 @@
     </div>
   </div>
 
-  <!-- ARCHIVE WINDOW -->
+  <!-- VISUAL ARCHIVE WINDOW -->
   <div class="archive-window hidden" id="archive-window" aria-hidden="true">
     <div class="archive-title-bar">
       <span>Visual Archive</span>
@@ -151,6 +146,90 @@
         rel="noopener noreferrer"
       >
         see more from the archive →
+      </a>
+    </div>
+  </div>
+
+  <!-- VIDEO ARCHIVE WINDOW -->
+  <div class="archive-window hidden" id="video-window" aria-hidden="true">
+    <div class="archive-title-bar">
+      <span>Video Archive</span>
+      <button
+        type="button"
+        class="archive-close"
+        id="close-video"
+        aria-label="Close video archive"
+      >
+        x
+      </button>
+    </div>
+
+    <div class="archive-body">
+      <div class="archive-grid video-grid">
+
+        <div
+          class="video-thumb"
+          data-video="https://www.youtube.com/embed/ZdqDEF_ZJEc"
+          data-title="video 01"
+        >
+          <img src="video1.png" alt="video 01 thumbnail">
+          <p>video 01</p>
+        </div>
+
+        <div
+          class="video-thumb"
+          data-video="https://www.youtube.com/embed/fsmix5it7s4"
+          data-title="video 02"
+        >
+          <img src="video2.png" alt="video 02 thumbnail">
+          <p>video 02</p>
+        </div>
+
+        <div
+          class="video-thumb"
+          data-video="https://www.youtube.com/embed/xd5rNueNTUI"
+          data-title="video 03"
+        >
+          <img src="video3.png" alt="video 03 thumbnail">
+          <p>video 03</p>
+        </div>
+
+        <div
+          class="video-thumb"
+          data-video="https://www.youtube.com/embed/XQqRndthats"
+          data-title="video 04"
+        >
+          <img src="video4.png" alt="video 04 thumbnail">
+          <p>video 04</p>
+        </div>
+
+        <div
+          class="video-thumb"
+          data-video="https://www.youtube.com/embed/BYC2_1Z-cjs"
+          data-title="video 05"
+        >
+          <img src="video5.png" alt="video 05 thumbnail">
+          <p>video 05</p>
+        </div>
+
+        <div
+          class="video-thumb"
+          data-video="https://www.youtube.com/embed/pTCe1H6_Gi8"
+          data-title="video 06"
+        >
+          <img src="video6.png" alt="video 06 thumbnail">
+          <p>video 06</p>
+        </div>
+
+      </div>
+
+      <a
+        href="https://www.youtube.com/@vivianisbored.mp4"
+        class="archive-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        see more videos →
       </a>
     </div>
   </div>
@@ -207,10 +286,28 @@
     </div>
   </div>
 
-  <!-- LIGHTBOX -->
+  <!-- IMAGE LIGHTBOX -->
   <div id="lightbox" class="lightbox hidden" aria-hidden="true">
     <button id="lightbox-close" class="lightbox-close" aria-label="Close image">✕</button>
     <img id="lightbox-image" class="lightbox-image" src="" alt="">
+  </div>
+
+  <!-- VIDEO LIGHTBOX -->
+  <div id="video-lightbox" class="lightbox hidden" aria-hidden="true">
+    <button id="video-lightbox-close" class="lightbox-close" aria-label="Close video">✕</button>
+
+    <div class="video-lightbox-content">
+      <div class="video-frame-wrap">
+        <iframe
+          id="video-iframe"
+          src=""
+          title="YouTube video player"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
