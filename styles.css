@@ -16,55 +16,60 @@ a:focus-visible { outline: 1px dashed currentColor; outline-offset: 5px; }
 .canvas { position: relative; width: 100%; min-height: 1080px; overflow: hidden; font-size: 24px; }
 .canvas > *, nav > a { position: absolute; overflow-wrap: break-word; }
 .home nav { position: static; }
+.home nav a { font-size: 20px; }
 .brand { top: 487px; left: calc(50% - 114px); width: 228px; height: 52.517px; text-align: center; }
 .nav-about { top: 137px; left: calc(50% + 193px); width: 107px; height: 53px; }
 .nav-work { top: 190px; left: calc(50% + 322px); width: 84px; height: 34px; }
 .nav-blog { top: 84px; left: calc(50% + 429px); width: 107px; height: 53px; }
-.credit { left: 17px; top: 16px; width: 385px; height: 53px; }
+.credit { font-size: 12px; left: 31px; top: 21px; width: 385px; height: 53px; }
 .tv { left: calc(50% - 61px); top: 540px; width: 188px; height: 141px; object-fit: cover; }
 .social { font-size: 16px; width: 198px; height: 53px; }
 .home .social { left: 138px; top: 938px; }
 .page-title { width: 107px; height: 53px; }
 .page-title a { text-decoration: underline; text-underline-position: from-font; }
-.copy { width: 164px; }
+.copy { width: 164px; font-size: 20px; }
 .about .page-title { left: calc(50% - 333px); top: 105px; }
-.about .copy { left: calc(50% + 83px); top: 195px; font-size: 20px; white-space: pre-wrap; }
+.about .copy { left: calc(50% + 99px); top: 215px; width: 130px; font-size: 16px; white-space: pre-wrap; }
 .about .social { left: 178px; top: 997px; }
 .work .page-title { left: calc(50% + 64px); top: 227px; }
-.work .copy { left: 309px; top: 355px; }
+.work .copy { left: 259px; top: 357px; }
 .work .social { left: 547px; top: 986px; width: 264px; height: 59px; }
 .blog .page-title { left: calc(50% + 223px); top: 86px; }
-.blog .copy { left: calc(50% - 446px); top: 515px; width: 128px; }
-.blog .social { left: calc(50% - 99px); top: 993px; }
-.blog .social-second { left: calc(50% + 217px); top: 1027px; }
+.blog .copy { left: calc(50% - 441px); top: 519px; width: 128px; }
+.blog .social { left: calc(50% - 113px); top: 968px; }
 /* Tablet artboard: 800 × 1080. */
 @media (max-width: 1023px) {
   .home { font-size: 16px; }
+  .home nav a { font-size: 16px; }
+  .work .copy { left: 309px; top: 355px; }
+  .work .social, .blog .social { font-size: 14px; }
+  .about .social { font-size: 13px; }
   .brand { left: calc(50% - 46px); top: 203px; width: 154px; height: 49px; text-align: left; }
   .nav-about { left: 55px; top: 415px; width: 73px; height: 49px; }
   .nav-work { left: 112px; top: 573px; width: 73px; height: 49px; }
   .nav-blog { left: auto; right: 55px; top: 509px; width: 100px; height: 49px; }
-  .credit { top: 767px; right: 22px; width: auto; height: 26px; }
+  .credit { left: 17px; font-size: 14px; top: 767px; right: 22px; width: auto; height: 26px; }
   .tv { left: calc(50% - 46px); top: 233px; width: 147px; height: 110px; }
-  .home .social { left: auto; right: 33px; top: 908px; width: 115px; height: 49px; }
+  .home .social { font-size: 14px; left: auto; right: 119px; top: 908px; width: 115px; height: 49px; }
   .about .page-title { left: calc(50% - 132px); top: 127px; }
-  .about .copy { left: calc(50% + 99px); }
+  .about .copy { left: calc(50% + 79px); width: 127px; }
   .blog .page-title { left: calc(50% + 96px); top: 204px; }
   .blog .copy { left: calc(50% - 194px); top: 419px; }
-  .blog .social { left: calc(50% + 141px); }
-  .blog .social-second { display: none; }
+  .blog .social { left: calc(50% + 141px); top: 993px; }
 }
 /* Mobile artboard: 375 × 1080. */
 @media (max-width: 599px) {
+  .credit { font-size: 12px; }
+  .home .social { right: 33px; font-size: 12px; }
   .brand { left: calc(50% - 56.5px); top: 189px; }
   .tv { left: auto; right: 94px; top: 220px; }
   .about .page-title { left: calc(50% - 121.5px); top: 89px; }
-  .about .copy { left: auto; right: 76px; top: 164px; width: 95px; font-size: 15px; }
-  .about .social { left: 40px; top: 1027px; }
+  .about .copy { left: auto; right: 79px; top: 164px; width: 109px; font-size: 15px; }
+  .about .social { font-size: 14px; left: 40px; top: 1027px; }
   .work .page-title { left: calc(50% - 106.5px); top: 164px; }
   .work .copy { left: 38px; top: 451px; }
-  .work .social { left: 88px; top: 1017px; width: 223px; height: 28px; }
+  .work .social { font-size: 12px; left: 88px; top: 1017px; width: 223px; height: 28px; }
   .blog .page-title { left: calc(50% + 96.5px); }
-  .blog .copy { left: calc(50% - 100.5px); top: 581px; }
-  .blog .social { left: auto; right: 0; top: 1003px; }
+  .blog .copy { left: calc(50% - 100.5px); top: 581px; width: 143px; }
+  .blog .social { font-size: 16px; left: auto; right: 0; top: 1003px; }
 }

@@ -22,6 +22,6 @@ Open `index.html` in a browser, or run `python3 -m http.server 4173` from this f
 - `assets/thisisatv.png`: original image downloaded from Figma.
 - `assets/fonts/GeneralSans-Medium.woff2`: locally hosted General Sans Medium from Fontshare (Indian Type Foundry). See https://www.fontshare.com/fonts/general-sans and https://www.fontshare.com/licenses/itf-free-font-license.
 
-The 1080px canvas height, empty space, narrow text columns, and duplicate desktop blog social link are intentional design details. Desktop starts at 1024px, tablet at 600px, and mobile below 600px. Exact reference widths are 1280, 800, and 375px. Coincident duplicate text layers are rendered once, and off-canvas copies are omitted. Work/blog line breaks are explicit to preserve the reference wrapping across browsers.
+The 1080px canvas height, empty space, narrow text columns, are intentional design details. Desktop starts at 1024px, tablet at 600px, and mobile below 600px. Exact reference widths are 1280, 800, and 375px. Coincident duplicate text layers are rendered once, and off-canvas copies are omitted. Text wraps naturally at the updated Figma column widths and font sizes.
 
 Homepage navigation opens each page; underlined page titles link back home. The @vivianisbored links are wired to the Instagram account of that name. No new visible navigation has been added.
